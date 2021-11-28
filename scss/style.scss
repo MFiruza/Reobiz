@@ -3,30 +3,64 @@
     padding: 0;
     border: 0;
     box-sizing: border-box !important;
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Poppins", sans-serif ;
     text-decoration: none !important;
     list-style-type: none !important;
 }
-//rb-about start
-
-.top-info {
-    background-color: #106eea;
-    a{
-        color: white;
-
+body{
+    position: relative;
+    .top-nav{
+        position: sticky;
+        top: 0;
     }
-    .top-left{
+}
+//rb-about start
+ul {
+    padding: 0;
+    margin: 0;
+}
+//top-info start
+.top-info {
+    padding: 10px 0;
+    background-color: #106eea;
+    a {
+        color: white;
+    }
+    .top-left {
         display: flex;
-        li{
+        margin: 10px 0 0 0;
+        li {
             margin: 0 10px 0 0;
-            i{
+            font-size: 14px;
+            i {
                 color: white;
                 font-size: 20px;
-                margin:0 7px 0 0;
+                margin: 0 7px 0 0;
             }
         }
     }
+    .top-right {
+        display: flex;
+        li {
+            margin: 3px 5px 0 0;
+            color: white;
+            a {
+                color: white;
+            }
+            i {
+                color: white;
+                font-size: 20px;
+                margin: 5px 0 0 0;
+            }
+        }
+        .opening {
+            border-right: 1px solid #1273eb;
+            display: inline-block;
+            font-size: 14px;
+        }
+    }
 }
+//rb-about start
 .rb-about {
     background-image: url("../img/bg1.jpg");
     background-position: center left;
@@ -89,7 +123,124 @@
         }
     }
 }
+//topnav
+.top-nav {
+    padding: 50px 0 0 0;
+    background-color: white;
+    box-shadow: 0 0 20px -10px #000000d9;
+    .top-logo {
+        width: 150px;
+        img {
+            max-width: 100%;
+        }
+    }
+    .nav-menu-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .nav-menu {
+            display: flex;
 
+            & > li {
+                margin: 0 50px 0 0;
+                padding: 20px 0;
+                transition: all 0.3s ease;
+                font-size: 13px;
+                font-weight: 700;
+                color: #101010;
+
+                & > a {
+                    color: #101010;
+                    cursor: text;
+                    padding: 26px 0;
+                }
+            }
+            .active {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "+";
+                    top: 20px;
+                    right: -15px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    display: inline-block;
+                    transition: all.3s;
+                }
+                .active-menu {
+                    position: absolute;
+                    background-color: #0d6efd;
+                    top: 70px;
+                    left: 0;
+                    height: 209px;
+                    width: 221px;
+                    padding: 20px 0 0 0;
+                    border-radius: 0 0 5px 5px;
+                    transition: all.3s;
+                    opacity: 0;
+                    visibility: hidden;
+
+                    & > li {
+                        height: 50px;
+                        a {
+                            padding: 11px 110px 11px 40px;
+                            line-height: 0;
+                            color: #ffffff;
+                            font-weight: 500;
+                            font-size: 14px;
+                            text-transform: capitalize;
+                            transition: all.3s;
+                        }
+                        :hover {
+                            color: #ccc;
+                        }
+                    }
+                }
+                &:hover {
+                    &::after {
+                        content: "-";
+                    }
+                    .active-menu {
+                        visibility: visible;
+                        opacity: 1;
+                        top: 60px;
+                    }
+                }
+
+                & .hw-d {
+                    height: 109px !important;
+                    width: 245px !important;
+                }
+            }
+            &:first-child {
+                margin: 0 0 0 0;
+            }
+        }
+        .grafics {
+            position: relative;
+            .grafic1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .grafic2 {
+                position: absolute;
+                top: -2px;
+                left: -1px;
+                visibility: hidden;
+                opacity: 0;
+                transition: all.2s;
+            }
+            &:hover {
+                .grafic2 {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
 //mini-section
 .sec-p {
     padding: 100px 0;
@@ -356,3 +507,5 @@ footer {
         }
     }
 }
+
+//changed=1
