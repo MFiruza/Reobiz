@@ -1,12 +1,23 @@
-// Toggle Mobile Menu
-// const open_menu = document.querySelector('.open-menu');
-// const close_menu = document.querySelector('.close-menu');
-// const navbar = document.querySelector('.navbar');
+"use strict"
+$(document).ready(function(){
+    $('#side-button').click(function() {
+        $('.side-info').css('right','-522px');
+    });
 
-// open_menu.addEventListener('click', toggleMenu);
-// close_menu.addEventListener('click', toggleMenu);
+    $('#grafics').click(function() {
+        $('.side-info').css('right','0');
+    });
 
 
-// function toggleMenu () {
-//   navbar.classList.toggle('is-active');
-// }
+    $('.nav-bars>a').click(function(ev){
+        // do whatever you want here
+    
+        ev.preventDefault();
+        ev.stopPropagation();
+    });
+
+
+
+
+
+  });

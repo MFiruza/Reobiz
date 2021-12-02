@@ -9,16 +9,6 @@
   list-style-type: none !important;
 }
 
-body {
-  position: relative;
-}
-
-body .top-nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
 ul {
   padding: 0;
   margin: 0;
