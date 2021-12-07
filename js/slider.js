@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     $('.responsive').slick({
         dots: true,
         infinite: false,
@@ -7,7 +7,7 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 4,
 
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         autoplaySpeed: 2000,
         responsive: [
@@ -45,6 +45,7 @@ $(document).ready(function () {
         infinite: true,
         speed: 1000,
         slidesToShow: 1,
-        adaptiveHeight: true
-      });
+        adaptiveHeight: false
+    });
+    
 });
