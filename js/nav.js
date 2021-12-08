@@ -42,4 +42,5 @@ $(document).ready(function () {
     $('#up-arrow').on('click', function () {
         $("html, body").animate({ scrollTop: 0 }, 1000);
     });
+    
 });

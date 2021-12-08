@@ -445,14 +445,14 @@ ul {
                 width: 500px;
                 display: flex;
                 justify-content: center;
-                align-items: center ;
+                align-items: center;
                 opacity: 0.5;
                 transition: all.3s;
                 img {
                     max-width: 100%;
                     margin: 0;
                 }
-                &:hover{
+                &:hover {
                     opacity: 1;
                 }
             }
@@ -593,7 +593,6 @@ ul {
                 img {
                     max-width: 100%;
                     transition: all.3s;
-                    
                 }
             }
             .hover-text-up {
@@ -672,8 +671,155 @@ ul {
                             color: white;
                         }
                     }
-                    .social-links{
+                    .social-links {
                         opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.read-latest-updates {
+    padding: 100px 0;
+    .latest-title {
+        .m-title {
+            span {
+                padding-right: 65px;
+                position: relative;
+                display: inline-block;
+                color: #106eea;
+                font-weight: 600;
+                margin-bottom: 8px;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 10px;
+                    right: 0;
+                    background-color: #106eea;
+                    width: 50px;
+                    height: 2px;
+                }
+            }
+        }
+        .main-title {
+            span {
+                color: #1c1b1b;
+                margin: 0 0 26px;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+    }
+    .viewbtn {
+        .readon {
+            padding: 15px 29px;
+            border: none;
+            border-radius: 3px;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            color: #ffffff;
+            background: #106eea;
+            transition: all 0.3s ease;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    .updates-items {
+        .updates-box {
+            position: relative;
+            max-width: 500px;
+            transition: all.3s ease;
+            margin: 0 5px;
+            &:hover{
+                .fly-btn{
+                    opacity: 1;
+                }
+                .box-img{
+                    img{
+                        filter: grayscale(100%);
+                    }
+                }
+                transform:translateY(-20px);
+            }
+            .fly-btn{
+                position: absolute;
+                top: 50%;
+                left: 39%;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                border-radius: 100%;
+                background: #106eea;
+                text-align: center;
+                display: inline-block;
+                color: white;
+                font-size: 18px;
+                z-index: 4;
+                opacity: 0;
+                transition: all.3s ease;
+                &:hover{
+                    background: #228bfd;
+                }
+            }
+            .box-img {
+                img{
+                    max-width: 100%;
+                    transition: all.3s;
+                }
+            }
+            .box-desc {
+                padding: 33px 25px 25px;
+                background-color: #ffffff;
+                .content-part {
+                    .categories {
+                        margin: 11px 0 0;
+                        text-transform: uppercase;
+                        color: #363636;
+                        display: inline-block;
+                        font-size: 15px;
+                        transition: all.3s ease;
+                        &:hover {
+                            color: #106eea;
+                        }
+                    }
+                    .upd-title {
+                        margin: 10px 0;
+                        a {
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #1c1b1b;
+                            transition: all.3s ease;
+                            &:hover {
+                                color: #106eea;
+                            }
+                        }
+                    }
+                    .blog-meta {
+                        display: flex;
+                        justify-content: space-between;
+                        .user-data {
+                            img {
+                                border-radius: 100%;
+                                max-width: 40px;
+                                margin-right: 8px;
+                            }
+                            span {
+                                font-size: 15px;
+                            }
+                        }
+                        .date {
+                            font-size: 14px;
+                            i {
+                                color: #106eea;
+                                margin-right: 5px;
+                            }
+                        }
                     }
                 }
             }

@@ -793,6 +793,170 @@ ul {
   opacity: 1;
 }
 
+.read-latest-updates {
+  padding: 100px 0;
+}
+
+.read-latest-updates .latest-title .m-title span {
+  padding-right: 65px;
+  position: relative;
+  display: inline-block;
+  color: #106eea;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.read-latest-updates .latest-title .m-title span::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 0;
+  background-color: #106eea;
+  width: 50px;
+  height: 2px;
+}
+
+.read-latest-updates .latest-title .main-title span {
+  color: #1c1b1b;
+  margin: 0 0 26px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.read-latest-updates .viewbtn .readon {
+  padding: 15px 29px;
+  border: none;
+  border-radius: 3px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  background: #106eea;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.read-latest-updates .viewbtn .readon:hover {
+  opacity: 0.8;
+}
+
+.read-latest-updates .updates-items .updates-box {
+  position: relative;
+  max-width: 500px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+}
+
+.read-latest-updates .updates-items .updates-box:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.read-latest-updates .updates-items .updates-box:hover .fly-btn {
+  opacity: 1;
+}
+
+.read-latest-updates .updates-items .updates-box:hover .box-img img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.read-latest-updates .updates-items .updates-box .fly-btn {
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 100%;
+  background: #106eea;
+  text-align: center;
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  z-index: 4;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.read-latest-updates .updates-items .updates-box .fly-btn:hover {
+  background: #228bfd;
+}
+
+.read-latest-updates .updates-items .updates-box .box-img img {
+  max-width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.read-latest-updates .updates-items .updates-box .box-desc {
+  padding: 33px 25px 25px;
+  background-color: #ffffff;
+}
+
+.read-latest-updates .updates-items .updates-box .box-desc .content-part .categories {
+  margin: 11px 0 0;
+  text-transform: uppercase;
+  color: #363636;
+  display: inline-block;
+  font-size: 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.read-latest-updates .updates-items .updates-box .box-desc .content-part .categories:hover {
+  color: #106eea;
+}
+
+.read-latest-updates .updates-items .updates-box .box-desc .content-part .upd-title {
+  margin: 10px 0;
+}
+
+.read-latest-updates .updates-items .updates-box .box-desc .content-part .upd-title a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1b1b;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.read-latest-updates .updates-items .updates-box .box-desc .content-part .upd-title a:hover {
+  color: #106eea;
+}
+
+.read-latest-updates .updates-items .updates-box .box-desc .content-part .blog-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.read-latest-updates .updates-items .updates-box .box-desc .content-part .blog-meta .user-data img {
+  border-radius: 100%;
+  max-width: 40px;
+  margin-right: 8px;
+}
+
+.read-latest-updates .updates-items .updates-box .box-desc .content-part .blog-meta .user-data span {
+  font-size: 15px;
+}
+
+.read-latest-updates .updates-items .updates-box .box-desc .content-part .blog-meta .date {
+  font-size: 14px;
+}
+
+.read-latest-updates .updates-items .updates-box .box-desc .content-part .blog-meta .date i {
+  color: #106eea;
+  margin-right: 5px;
+}
+
 @media (max-width: 991px) {
   .m-991 {
     margin: 30px 0;
