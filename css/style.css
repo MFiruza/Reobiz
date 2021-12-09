@@ -957,6 +957,107 @@ ul {
   margin-right: 5px;
 }
 
+.read-latest-updates .responsive .slick-arrow {
+  display: none !important;
+}
+
+.read-latest-updates .responsive .slick-dots {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.read-latest-updates .responsive .slick-dots li {
+  margin: 20px 0 20px 15px;
+}
+
+.read-latest-updates .responsive .slick-dots li button {
+  font-size: 0;
+  border-radius: 50px;
+  background-color: #88b7f5;
+  width: 25px;
+  height: 8px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.read-latest-updates .responsive .slick-dots li:first-child {
+  margin-right: 0;
+}
+
+.read-latest-updates .responsive .slick-dots .slick-active button {
+  background-color: #106eea;
+  width: 40px;
+}
+
+.read-latest-updates .responsive .responsive-box .portfolio-item {
+  overflow: hidden;
+  margin: 0 20px 0 0;
+  border-radius: 5px;
+  position: relative;
+  max-width: 100%;
+}
+
+.read-latest-updates .responsive .responsive-box .portfolio-item > .overlay {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.486);
+  z-index: 2;
+}
+
+.read-latest-updates .responsive .responsive-box .portfolio-item .item-img img {
+  max-width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.read-latest-updates .responsive .responsive-box .portfolio-item .content-part {
+  position: absolute;
+  top: 223px;
+  left: 10px;
+  z-index: 3;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.read-latest-updates .responsive .responsive-box .portfolio-item .content-part a {
+  color: #dad9d9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.read-latest-updates .responsive .responsive-box .portfolio-item .content-part .title a {
+  color: white;
+  font-weight: 700;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.read-latest-updates .responsive .responsive-box .portfolio-item .content-part a:hover,
+.read-latest-updates .responsive .responsive-box .portfolio-item .content-part title > a:hover {
+  color: #106eea;
+}
+
+.read-latest-updates .responsive .responsive-box .portfolio-item:hover .item-img img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.read-latest-updates .responsive .responsive-box .portfolio-item:hover .content-part {
+  top: 200px;
+}
+
 @media (max-width: 991px) {
   .m-991 {
     margin: 30px 0;
