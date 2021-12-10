@@ -419,6 +419,151 @@ ul {
   width: 40px;
 }
 
+.rs-form-part {
+  padding: 150px 0 0;
+}
+
+.rs-form-part .quote-img {
+  background-image: url("../img/about-bg.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 256px 0;
+}
+
+.rs-form-part .form-part {
+  background-color: #155fb8;
+  padding: 72px 70px 94px;
+}
+
+.rs-form-part .form-part .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+}
+
+.rs-form-part .form-part .form-row .form-group input {
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+  color: #ffffff;
+  background: rgba(18, 115, 235, 0.5);
+  font-size: 16px;
+  padding: 11px 20px;
+  border-radius: 0;
+}
+
+.rs-form-part .form-part .form-row .form-group input::-webkit-input-placeholder {
+  color: white;
+}
+
+.rs-form-part .form-part .form-row .form-group input:-ms-input-placeholder {
+  color: white;
+}
+
+.rs-form-part .form-part .form-row .form-group input::-ms-input-placeholder {
+  color: white;
+}
+
+.rs-form-part .form-part .form-row .form-group input::placeholder {
+  color: white;
+}
+
+.rs-form-part .form-part .form-row .form-group input:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.rs-form-part .form-part #textArea {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+  color: #ffffff;
+  background: rgba(18, 115, 235, 0.5);
+  font-size: 16px;
+  padding: 11px 20px;
+  border-radius: 0;
+}
+
+.rs-form-part .form-part #textArea::-webkit-input-placeholder {
+  color: white;
+}
+
+.rs-form-part .form-part #textArea:-ms-input-placeholder {
+  color: white;
+}
+
+.rs-form-part .form-part #textArea::-ms-input-placeholder {
+  color: white;
+}
+
+.rs-form-part .form-part #textArea::placeholder {
+  color: white;
+}
+
+.rs-form-part .form-part #textArea:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.rs-form-part .form-part .readon[type=submit] {
+  background: #ffffff;
+  color: #106eea;
+  font-weight: 400;
+  padding: 13px 32px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.rs-form-part .form-part .readon[type=submit]:hover {
+  background-color: #106eea;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .form-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .col-m1 {
+    display: none;
+  }
+  .col-m2 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .form-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .col-m1 {
+    display: none;
+  }
+  .col-m2 {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 989px) {
   .rb-about-p-2 {
     padding-top: 50px;

@@ -343,6 +343,105 @@ ul {
         }
     }
 }
+.rs-form-part{
+    padding: 150px 0 0;
+    .quote-img {
+        background-image: url("../img/about-bg.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 256px 0;
+    }
+    .form-part {
+        background-color: #155fb8;
+        padding: 72px 70px 94px;
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            max-width: 100%;
+            .form-group {
+                input {
+                    margin: 10px 0;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    margin-bottom: 30px;
+                    color: #ffffff;
+                    background: rgba(18, 115, 235, 0.5);
+                    font-size: 16px;
+                    padding: 11px 20px;
+                    border-radius: 0;
+                    &::placeholder {
+                        color: white;
+                    }
+                    &:focus {
+                        outline: none !important;
+                        box-shadow: none !important;
+                    }
+                }
+            }
+        }
+
+        #textArea {
+            width: 100%;
+            border: none;
+            outline: none;
+            margin-bottom: 30px;
+            color: #ffffff;
+            background: rgba(18, 115, 235, 0.5);
+            font-size: 16px;
+            padding: 11px 20px;
+            border-radius: 0;
+            &::placeholder {
+                color: white;
+            }
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+            
+        }
+        .readon[type=submit]{
+            background: #ffffff;
+            color: #106eea;
+            font-weight: 400;
+            padding: 13px 32px;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            display: inline-block;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: #106eea;
+                color: white ;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .form-row{
+        flex-direction: column;
+    }
+    .col-m1{
+        display: none;
+    }
+    .col-m2{
+        max-width: 100%;
+    }
+}
+@media (max-width: 991px) {
+    .form-row{
+        flex-direction: column;
+    }
+    .col-m1{
+        display: none;
+    }
+    .col-m2{
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 989px) {
     .rb-about-p-2 {
         padding-top: 50px;

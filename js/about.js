@@ -1,14 +1,14 @@
 $(document).ready(function () {
-  var counters = $(".counter");
-  var countersQuantity = counters.length;
-  var counter = [];
+  let counters = $(".counter");
+  let countersQuantity = counters.length;
+  let counter = [];
 
   for (i = 0; i < countersQuantity; i++) {
     counter[i] = parseInt(counters[i].innerHTML);
   }
 
-  var count = function (start, value, id) {
-    var localStart = start;
+  let count = function (start, value, id) {
+    let localStart = start;
     setInterval(function () {
       if (localStart < value) {
         localStart++;
@@ -20,41 +20,41 @@ $(document).ready(function () {
   for (j = 0; j < countersQuantity; j++) {
     count(10, counter[j], j);
   }
- 
+  
 
   $('.responsive').slick({
     dots: true,
     infinite: false,
     speed: 1500,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
 
     autoplay: false,
     infinite: true,
     autoplaySpeed: 2000,
     responsive: [
         {
-            breakpoint: 1186,
+            breakpoint: 1200,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                slidesToShow: 2,
+                slidesToScroll:6 ,
                 infinite: true,
                 dots: true
             }
 
         },
         {
-            breakpoint: 991,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 6
             }
         },
         {
             breakpoint: 575,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 6
             }
         }
         // You can unslick at a given breakpoint now by adding:
