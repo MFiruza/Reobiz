@@ -8,13 +8,12 @@
     list-style-type: none !important;
     outline: none !important;
 }
-
 ul {
     padding: 0;
     margin: 0;
 }
 .page-here {
-    background-image: url("../img/serviceshere.jpg");
+    background-image: url("../img/portfoliohere.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,40 +127,30 @@ ul {
         }
     }
 }
-/////do it again
-.rs-faq {
+.contact-form {
     padding: 100px 0;
+
     .sec-title {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        .sub-title {
-            color: #106eea;
-            font-weight: 500;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-        .mtitle {
-            margin-bottom: 16px;
-            font-size: 36px;
-            line-height: 40px;
-            color: #1c1b1b;
-            margin: 0 0 26px;
-            font-weight: 700;
-        }
-        .desc {
-            font-size: 16px;
-            color: #363636;
-            text-align: start;
+        padding: 10px 0;
+        align-items: flex-start !important;
+        .sub-title,
+        .title {
+            color: white !important;
         }
     }
-    .form-part {
-        background-image: url("../img/faqform.jpg");
-        background-position: center center;
-        background-size: cover;
+    .quote-img {
+        background-image: url("../img/contactleft.jpg");
+        background-position: center top;
         background-repeat: no-repeat;
-        padding: 40px 30px;
+        background-size: cover;
+        padding: 303px 0;
+    }
+    .form-part {
+        background-color: #155fb8;
+        padding: 72px 70px 94px;
         .form-row {
+            display: flex;
+            justify-content: space-between;
             max-width: 100%;
             .form-group {
                 input {
@@ -171,7 +160,7 @@ ul {
                     outline: none;
                     margin-bottom: 30px;
                     color: #ffffff;
-                    background: rgba(10, 56, 112, 0.25);
+                    background: rgba(18, 115, 235, 0.5);
                     font-size: 16px;
                     padding: 11px 20px;
                     border-radius: 0;
@@ -192,7 +181,7 @@ ul {
             outline: none;
             margin-bottom: 30px;
             color: #ffffff;
-            background: rgba(10, 56, 112, 0.25);
+            background: rgba(18, 115, 235, 0.5);
             font-size: 16px;
             padding: 11px 20px;
             border-radius: 0;
@@ -215,65 +204,89 @@ ul {
             display: inline-block;
             text-transform: uppercase;
             transition: all 0.3s ease;
+            &:hover {
+                background-color: #106eea;
+                color: white;
+            }
         }
     }
-    .accordion {
-        .a-card {
-            margin-bottom: 25px;
-            border: none;
-            background-color: #ffffff;
-            box-shadow: 0 0 22px #0000001a;
-            .a-c-heading {
+}
+.rs-contact {
+    padding: 100px 0;
+    .info-item {
+        background: #f1f6fc;
+        padding: 50px 30px 37px;
+        text-align: center;
+        margin-top: 20px;
+        overflow: hidden;
+        .icon-part {
+            i {
+                font-size: 80px;
+                color: #106eea;
+                line-height: 1;
+                margin-top: -5px;
+                margin-bottom: 20px;
                 position: relative;
-                padding: 10px 25px 10px 65px;
-
-                p {
-                    font-size: 18px;
-                    font-weight: 600;
-                    line-height: 28px;
-                    color: #1c1b1b;
-                    display: block;
-                }
-                &:after {
-                    position: absolute;
-                    left: 17px;
-                    color: #106eea;
-                    font-size: 25px;
-                    top: 13%;
-                    content: "\f06e";
-                    font-family: FontAwesome;
-                    font-weight: 400;
+                z-index: 1;
+                &::after{
                     
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    left: 6%;
+                    top: 7%;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100%;
+                    background-color: #acccf4;
                 }
             }
-            .contents {
-                
-               
-                background: teal;
-                max-height: 0px;
-                overflow: hidden;
+        }
+        .content-part {
+           
+            .title {
+                color: #363636;
+                margin-bottom: 12px;
+                font-size: 20px;
+                line-height: 28px;
+                margin: 0 0 9px;
+                font-weight: 700;
+            }
+            a{
+                font-size: 18px;
+                color: #363636;
                 transition: all.3s ease;
-                p {
-                    font-weight: 400;
-                    color: #363636;
-                    font-size: 16px;
-                    line-height: 1.7;
-                    padding: 15px 40px 41px 20px !important;
+                
+                &:hover{
+                    color: #106eea;
                 }
             }
             
         }
-        .a-card.active{
-            .a-c-heading{
-                
-                &:after {
-                
-                    content: "\f070";
-                   
-                }
+    }
+}
+@media (max-width: 991px) {
+    .quote-img {
+        display: none;
+    }
+    .col-m1 {
+        display: none;
+    }
+    .col-m2 {
+        max-width: 100%;
+    }
+}
+@media (max-width: 1199px) {
+    .form-row {
+        flex-direction: column;
+    }
+    .contact-form {
+        .res {
+            &:first-child {
+                display: none;
             }
-            .contents{
-                max-height: 300px;
+            &:last-child {
+                margin: 0 auto;
             }
         }
     }
