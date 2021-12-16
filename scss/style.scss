@@ -14,6 +14,87 @@ ul {
     margin: 0;
 }
 
+.nivo-caption {
+    .one-time {
+        .slick-arrow {
+            display: none !important;
+        }
+        .slick-dots {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            li {
+                margin: 20px 0 20px 15px;
+                button {
+                    font-size: 0;
+                    border-radius: 50px;
+                    background-color: #88b7f5;
+                    width: 25px;
+                    height: 8px;
+                    transition: all.5s;
+                }
+                &:first-child {
+                    margin-right: 0;
+                }
+            }
+            .slick-active {
+                button {
+                    background-color: #106eea;
+                    width: 40px;
+                }
+            }
+        }
+    }
+    .slide-box {
+        max-width: 100%;
+        position: relative;
+        .slide-img {
+            img {
+                max-width: 100%;
+            }
+        }
+        .content-part {
+            position: absolute;
+            top: 20px;
+            right:40%;
+            padding: 45px 35px 55px;
+            border-radius: 5px;
+            max-width: 545px;
+            background: #228bfdc7;
+            .slider-des {
+                .sl-title {
+                    margin-bottom: 20px;
+                    color: white;
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+                .sl-desc {
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: white;
+                }
+              
+            }
+            
+            .slider-bottom {
+                display: inline-block;
+                margin: 39px 0 20px;
+
+                .readon {
+                    background-color: #ffffff;
+                    color: #228bfd;
+                    padding: 15px 29px;
+                    border: none;
+                    border-radius: 3px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
 //rb-about start
 .rb-about {
     background-image: url("../img/bg1.jpg");
@@ -80,6 +161,7 @@ ul {
 //mini-section start
 
 .mini-section {
+    
     .service-wrap {
         width: 100%;
         display: flex;
@@ -584,7 +666,6 @@ ul {
             position: relative;
             max-width: 350px;
             overflow: hidden;
-            border-bottom: 3px solid #eaedf0;
             border-radius: 5px 5px 3px 3px;
             margin: 0 10px 0 10px;
             .team-image {
@@ -600,7 +681,7 @@ ul {
 
                 .text-bottom {
                     position: absolute;
-                    top: 250px;
+                    top: 49%;
                     left: 0;
                     right: 0;
                     display: flex;
@@ -659,7 +740,7 @@ ul {
                     }
                 }
                 .text-bottom {
-                    top: 236px;
+                    top: 40%;
                     background: #106eea;
                     .person-nouns {
                         .person-name {
@@ -736,18 +817,18 @@ ul {
             max-width: 500px;
             transition: all.3s ease;
             margin: 0 5px;
-            &:hover{
-                .fly-btn{
+            &:hover {
+                .fly-btn {
                     opacity: 1;
                 }
-                .box-img{
-                    img{
+                .box-img {
+                    img {
                         filter: grayscale(100%);
                     }
                 }
-                transform:translateY(-20px);
+                transform: translateY(-20px);
             }
-            .fly-btn{
+            .fly-btn {
                 position: absolute;
                 top: 50%;
                 left: 39%;
@@ -763,12 +844,12 @@ ul {
                 z-index: 4;
                 opacity: 0;
                 transition: all.3s ease;
-                &:hover{
+                &:hover {
                     background: #228bfd;
                 }
             }
             .box-img {
-                img{
+                img {
                     max-width: 100%;
                     transition: all.3s;
                 }

@@ -1,22 +1,15 @@
-$(document).ready(function () {
-    // $('.a-c-heading').click(function (e) {
-    //     $('.a-card').toggleClass('active');
-    //     if(!('.a-card.active').hasClass('active')){
-    //         $('.a-card').removeClass('active');
-    //     }
+'use strict'
+let opening = document.querySelectorAll(".accordion");
+let titleClick = document.querySelectorAll(".title");
 
-    // });
+for (let i = 0; i < titleClick.length; i++) {
+	titleClick[i].addEventListener("click", function () {
+		for (let j = 0; j < opening.length; j++) {
 
-    $(".a-c-heading").on("click", function(e) {
-
-		e.preventDefault();
-		let $this = $(this);
-
-		if (!$this.hasClass("active")) {
-			$(".a-card.active").removeClass("active");
+			opening[j].classList.remove("active")
 		}
 
-		$this.toggleClass("active");
-		$this.next().slideToggle();
-	});
-});
+		opening[i].classList.add("active")
+	})
+
+}

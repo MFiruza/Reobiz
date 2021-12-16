@@ -249,8 +249,8 @@ ul {
   max-width: 70%;
   background-color: white;
   z-index: 2;
-  -webkit-box-shadow: 0px 15px 34px -5px grey;
-          box-shadow: 0px 15px 34px -5px grey;
+  -webkit-box-shadow: 0px 15px 34px -5px #c1c1c14d;
+          box-shadow: 0px 15px 34px -5px #c1c1c14d;
   position: absolute;
   top: 80%;
   left: 9%;
@@ -284,6 +284,7 @@ ul {
 }
 
 .owl-stage-outer .owl-wrap .stage-box .text-bottom .designation {
+  margin: 15px 0;
   display: block;
   color: #000;
   margin: 4px 0 0;
@@ -316,8 +317,8 @@ ul {
   position: absolute;
   z-index: 1;
   background: #000;
-  top: 37%;
-  left: 44%;
+  top: 36%;
+  left: 37%;
   width: 50px;
   height: 2px;
 }
@@ -515,7 +516,7 @@ ul {
           box-shadow: none !important;
 }
 
-.rs-form-part .form-part .readon[type=submit] {
+.rs-form-part .form-part .readon[type="submit"] {
   background: #ffffff;
   color: #106eea;
   font-weight: 400;
@@ -529,7 +530,7 @@ ul {
   transition: all 0.3s ease;
 }
 
-.rs-form-part .form-part .readon[type=submit]:hover {
+.rs-form-part .form-part .readon[type="submit"]:hover {
   background-color: #106eea;
   color: white;
 }

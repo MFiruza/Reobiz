@@ -302,8 +302,8 @@ ul {
 }
 
 .recent-post .footer-post .post-wrap .post-img img {
-  max-height: 56px;
-  border-radius: 4px;
+  max-width: 80px;
+  border-radius: 3px;
 }
 
 .recent-post .footer-post .post-wrap .post-desc {

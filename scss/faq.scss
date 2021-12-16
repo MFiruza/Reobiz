@@ -217,63 +217,59 @@ ul {
             transition: all 0.3s ease;
         }
     }
-    .accordion {
-        .a-card {
-            margin-bottom: 25px;
-            border: none;
+    .accordion-all {
+        .accordion {
+            max-width: 100%;
             background-color: #ffffff;
             box-shadow: 0 0 22px #0000001a;
-            .a-c-heading {
-                position: relative;
-                padding: 10px 25px 10px 65px;
 
+            .title {
                 p {
                     font-size: 18px;
                     font-weight: 600;
                     line-height: 28px;
                     color: #1c1b1b;
                     display: block;
-                }
-                &:after {
-                    position: absolute;
-                    left: 17px;
-                    color: #106eea;
-                    font-size: 25px;
-                    top: 13%;
-                    content: "\f06e";
-                    font-family: FontAwesome;
-                    font-weight: 400;
-                    
+                    color: black;
+                    padding: 20px 10px;
+                    padding-left: 65px !important;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        top: 29%;
+                        left: 4%;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 400;
+                        content: "\f06e";
+                        color: #106eea;
+                        font-size: 25px;
+                    }
                 }
             }
-            .contents {
-                
-               
-                background: teal;
-                max-height: 0px;
+
+            .acc-content {
                 overflow: hidden;
-                transition: all.3s ease;
-                p {
-                    font-weight: 400;
-                    color: #363636;
-                    font-size: 16px;
-                    line-height: 1.7;
-                    padding: 15px 40px 41px 20px !important;
+                max-height: 0;
+                transition: all.3s;
+                .content {
+                    .text {
+                        font-weight: 400;
+                        color: #363636;
+                        padding: 15px 40px 41px 20px !important;
+                    }
                 }
             }
-            
         }
-        .a-card.active{
-            .a-c-heading{
-                
-                &:after {
-                
-                    content: "\f070";
-                   
-                }
-            }
-            .contents{
+        .accordion.active {
+            .acc-content {
                 max-height: 300px;
+            }
+            .title {
+                p {
+                    &::before{
+                        content: "\f070";
+                    }
+                }
             }
         }
     }

@@ -15,6 +15,93 @@ ul {
   margin: 0;
 }
 
+.nivo-caption .one-time .slick-arrow {
+  display: none !important;
+}
+
+.nivo-caption .one-time .slick-dots {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nivo-caption .one-time .slick-dots li {
+  margin: 20px 0 20px 15px;
+}
+
+.nivo-caption .one-time .slick-dots li button {
+  font-size: 0;
+  border-radius: 50px;
+  background-color: #88b7f5;
+  width: 25px;
+  height: 8px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nivo-caption .one-time .slick-dots li:first-child {
+  margin-right: 0;
+}
+
+.nivo-caption .one-time .slick-dots .slick-active button {
+  background-color: #106eea;
+  width: 40px;
+}
+
+.nivo-caption .slide-box {
+  max-width: 100%;
+  position: relative;
+}
+
+.nivo-caption .slide-box .slide-img img {
+  max-width: 100%;
+}
+
+.nivo-caption .slide-box .content-part {
+  position: absolute;
+  top: 20px;
+  right: 40%;
+  padding: 45px 35px 55px;
+  border-radius: 5px;
+  max-width: 545px;
+  background: #228bfdc7;
+}
+
+.nivo-caption .slide-box .content-part .slider-des .sl-title {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.nivo-caption .slide-box .content-part .slider-des .sl-desc {
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+}
+
+.nivo-caption .slide-box .content-part .slider-bottom {
+  display: inline-block;
+  margin: 39px 0 20px;
+}
+
+.nivo-caption .slide-box .content-part .slider-bottom .readon {
+  background-color: #ffffff;
+  color: #228bfd;
+  padding: 15px 29px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .rb-about {
   background-image: url("../img/bg1.jpg");
   background-position: center left;
@@ -678,7 +765,6 @@ ul {
   position: relative;
   max-width: 350px;
   overflow: hidden;
-  border-bottom: 3px solid #eaedf0;
   border-radius: 5px 5px 3px 3px;
   margin: 0 10px 0 10px;
 }
@@ -700,7 +786,7 @@ ul {
 
 .team-members .team-wrap .team-item .hover-text-up .text-bottom {
   position: absolute;
-  top: 250px;
+  top: 49%;
   left: 0;
   right: 0;
   display: -webkit-box;
@@ -777,7 +863,7 @@ ul {
 }
 
 .team-members .team-wrap .team-item:hover .text-bottom {
-  top: 236px;
+  top: 40%;
   background: #106eea;
 }
 
